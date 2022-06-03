@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Chekout') {
             steps {
-                git url:git branch: 'main', url: 'https://github.com/pushops/repo1.git'
+                git url:'https://github.com/bbachi/nodejs-restapi-mongo.git', branch: 'main'
                 echo 'Checkout Completed'
             }
         }
